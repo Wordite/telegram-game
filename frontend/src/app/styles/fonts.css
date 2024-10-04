@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Catamaran Black'), url('/fonts/Catamaran-Black.woff') format('woff');
+}

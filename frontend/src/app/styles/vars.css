@@ -1,0 +1,25 @@
+html {
+  --color-purple: #bd72f6;
+  --color-purple-light: #c984f7;
+
+  --color-glitter: #e4d0fb;
+
+  --color-white: white;
+  --color-black: black;
+
+  --color-biege-dark: #a59b73;
+  --color-biege: #d7d1b6;
+  --color-biege-light: #f1edd8;
+  --color-biege-neutral: #c6c4ba;
+
+  --color-secondary: #e5e3d4;
+
+  --color-orange: #ff8a32;
+  --color-orange-light: #ffbc75;
+  --color-orange-dark: #f55d1c;
+
+  --color-blue-light: #badaf2;
+
+  --color-brown: #6F6A57;
+  --color-brown-light: rgba(89, 85, 68, .48);
+}
