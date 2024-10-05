@@ -7,6 +7,8 @@ export default {
         purple: {
           DEFAULT: 'var(--color-purple)',
           light: 'var(--color-purple-light)',
+          'semi-transparent': 'var(--color-purple-semi-transparent)',
+          dark: 'var(--color-purple-dark)'
         },
         glitter: {
           DEFAULT: 'var(--color-glitter)',
@@ -21,7 +23,9 @@ export default {
           dark: 'var(--color-biege-dark)',
           DEFAULT: 'var(--color-biege)',
           light: 'var(--color-biege-light)',
-          neutral: 'var(--color-biege-neutral)'
+          neutral: 'var(--color-biege-neutral)',
+          'light-1': 'var(--color-biege-light-1)',
+          'biege-neutral-1': 'var(--color-biege-neutral-1)'
         },
         secondary: {
           DEFAULT: 'var(--color-secondary)',
@@ -40,14 +44,18 @@ export default {
           light: 'var(--color-brown-light)',
         },
       },
-      boxShadow: {
-        'light-two-sided': '',
-        'orange-two-sided': '',
-        'purple-one-sided': '',
-        'purple-two-sided': '',
-        'light-one-sided': '',
-        'light-one-sided': '',
+      backgroundImage: {
+        'biege-gradient-horizontal': 'linear-gradient(0deg, var(--color-biege-neutral-1) 60%, var(--color-biege-neutral) 100%)',
+        'popup-gradient-background': 'linear-gradient(to top, rgba(30, 29, 26, 0.4), rgba(30, 29, 26, 0.3))'
       },
+      // boxShadow: {
+      //   'light-two-sided': '',
+      //   'orange-two-sided': '',
+      //   'purple-one-sided': '',
+      //   'purple-two-sided': '',
+      //   'light-one-sided': '',
+      //   'light-one-sided': '',
+      // },
     },
   },
   plugins: [],

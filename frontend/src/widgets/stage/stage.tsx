@@ -1,10 +1,24 @@
 import flask from '@assets/icons/flask.png'
 import StageProgressBar from '@components/stageProgressBar/stageProgressBar'
-import { Triangle } from '@shared/triangle/triangle'
+import coin from '@assets/icons/coin.png'
+import { useRef } from 'react'
+import { upgradeStage } from '@app/store/slices/stage'
+import { useDispatch } from 'react-redux'
+import { decreaseCoins } from '@app/store/slices/coins'
+import PurpleBlock from '@shared/purpleBlock/purpleBlock'
+
 
 const Stage = () => {
+  const progressRef = useRef(null)
+  const dispatch = useDispatch()
+
+  const clickHandler = () => {
+    dispatch(upgradeStage())
+    dispatch(decreaseCoins(4.99))
+  }
+
   return (
-    <section className='stage relative w-full h-[152px] z-20 mt-auto bg-gradient-to-t from-[#C6C4BA] to-[#D7D5CC] rounded-[12px]'>
+    <section className='stage open-scale relative w-full h-[152px] z-20 mt-auto bg-gradient-to-t from-[#C6C4BA] to-[#D7D5CC] rounded-[12px]'>
       <div className='stage-bg' />
 
       <div className='h-[77px] flex items-center gap-[16px] px-[12px]'>
@@ -27,11 +41,17 @@ const Stage = () => {
         </div>
       </div>
 
-      <div className='h-[76px] border-black border-[1.6px] rounded-[12px]'>
+      <div data-clickable-effect='easy' className='clickable h-[76px] border-black border-[1.6px] rounded-[12px] overflow-hidden' ref={progressRef}>
         <StageProgressBar progress={40} />
-        <div className='h-[51px] bg-purple rounded-[12px]'>
+        <PurpleBlock onClick={clickHandler} className='h-[55px] cursor-pointer -translate-y-[3px] rounded-[12px]'>
+          <div className='flex items-center gap-[6px] pb-[4px]'>
+            <p className='text text-[18px] relative z-10'>Buy Stage for</p>
 
-        </div>
+            <img className='w-[22px] h-[24px]' src={coin} alt='coin' />
+
+            <p className='text text-[18px] relative z-10'>4.99</p>
+          </div>
+        </PurpleBlock>
       </div>
     </section>
   )

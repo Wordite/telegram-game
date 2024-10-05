@@ -1,6 +1,8 @@
 html {
   --color-purple: #bd72f6;
   --color-purple-light: #c984f7;
+  --color-purple-semi-transparent: rgba(176, 94, 244, .48);
+  --color-purple-dark: #AC5CE9;
 
   --color-glitter: #e4d0fb;
 
@@ -10,7 +12,9 @@ html {
   --color-biege-dark: #a59b73;
   --color-biege: #d7d1b6;
   --color-biege-light: #f1edd8;
+  --color-biege-light-1: ##dedbcc;
   --color-biege-neutral: #c6c4ba;
+  --color-biege-neutral-1: #D7D5CC;
 
   --color-secondary: #e5e3d4;
 
@@ -22,4 +26,6 @@ html {
 
   --color-brown: #6F6A57;
   --color-brown-light: rgba(89, 85, 68, .48);
+
+  --color-background-popup: #1E1D1A;
 }

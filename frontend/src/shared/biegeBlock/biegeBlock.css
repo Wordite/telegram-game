@@ -1,0 +1,4 @@
+.biege-block {
+  background: var(--color-biege);
+  box-shadow: inset 0 -2px 0 var(--color-biege-dark), inset 0 2px 0 var(--color-biege-light);
+}

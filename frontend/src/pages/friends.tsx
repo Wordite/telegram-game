@@ -1,10 +1,9 @@
-import Layout from "@app/layout"
-
+import FriendsTitle from "@widgets/friendsTitle/friendsTitle"
 
 const Friends = () => (
-  <Layout>
-    Friends
-  </Layout>
+  <>
+    <FriendsTitle />
+  </>
 )
 
 export default Friends

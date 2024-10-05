@@ -67,7 +67,16 @@ body {
 html, :root, body {
   height: 100dvh !important;
   overflow: hidden;
-  /* line-height: 1em; */
 }
 
+
+main {
+  max-width: 390px;
+  margin: auto;
+  overflow: hidden;
+}
+
+* {
+  user-select: none;
+}
 

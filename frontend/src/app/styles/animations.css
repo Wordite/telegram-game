@@ -1,0 +1,10 @@
+
+.pressed {
+    transition: .3s;
+    transform: scale3d(1.06, 0.9, 1) !important;
+}
+
+.pressed-easy {
+    transition: .3s;
+    transform: scale3d(1.01, 0.95, 1) !important;
+}

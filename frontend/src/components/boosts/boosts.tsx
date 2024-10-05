@@ -10,7 +10,7 @@ const Boosts = () => {
           <span className='text z-10 block'>1290</span>
         </p>
       </div>
-      <img className='w-[28px] h-[30px] absolute right-[-8px]' src={plusPurple} alt='plus' />
+      <img className='w-[28px] h-[30px] absolute right-[-8px] clickable cursor-pointer' src={plusPurple} alt='plus' />
     </div>
   )
 }
