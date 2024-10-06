@@ -3,6 +3,8 @@ html {
   --color-purple-light: #c984f7;
   --color-purple-semi-transparent: rgba(176, 94, 244, .48);
   --color-purple-dark: #AC5CE9;
+  --color-purple-soft: #E1A3FD;
+  --color-purple-icon: #C360FF;
 
   --color-glitter: #e4d0fb;
 
@@ -15,6 +17,9 @@ html {
   --color-biege-light-1: ##dedbcc;
   --color-biege-neutral: #c6c4ba;
   --color-biege-neutral-1: #D7D5CC;
+  --color-biege-1: #FFBF8F;
+  --color-biege-2: #FFCEAA;
+  --color-biege-3: #EAA572;
 
   --color-secondary: #e5e3d4;
 

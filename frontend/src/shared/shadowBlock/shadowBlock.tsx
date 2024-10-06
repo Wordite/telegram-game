@@ -1,6 +1,6 @@
 import { PropsWithChildren } from "react"
 
-const blockTypes = {}
+// const blockTypes = {}
 
 interface IShadowBlockProps {
     type: 'LightTwoSided' | 'LightOneSided' | 'OrangeTwoSided' | 'PurpleOneSide' | 'PurpleTwoSided',

@@ -67,11 +67,16 @@ body {
 html, :root, body {
   height: 100dvh !important;
   overflow: hidden;
+  font-size: calc(1.6vw + 1.6vh);
+
+  @media (min-width: 600px) {
+    font-size: 22px;
+  }
 }
 
 
 main {
-  max-width: 390px;
+  max-width: 600px;
   margin: auto;
   overflow: hidden;
 }
@@ -80,3 +85,16 @@ main {
   user-select: none;
 }
 
+
+/* add the code bellow */
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+ /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+}
+}

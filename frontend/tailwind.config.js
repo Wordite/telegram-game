@@ -8,7 +8,8 @@ export default {
           DEFAULT: 'var(--color-purple)',
           light: 'var(--color-purple-light)',
           'semi-transparent': 'var(--color-purple-semi-transparent)',
-          dark: 'var(--color-purple-dark)'
+          dark: 'var(--color-purple-dark)',
+          icon: 'var(--color-purple-icon)'
         },
         glitter: {
           DEFAULT: 'var(--color-glitter)',
@@ -25,7 +26,10 @@ export default {
           light: 'var(--color-biege-light)',
           neutral: 'var(--color-biege-neutral)',
           'light-1': 'var(--color-biege-light-1)',
-          'biege-neutral-1': 'var(--color-biege-neutral-1)'
+          'biege-neutral-1': 'var(--color-biege-neutral-1)',
+          '1': 'var(--color-biege-1)',
+          '2': 'var(--color-biege-2)',
+          '3': 'var(--color-biege-3)'
         },
         secondary: {
           DEFAULT: 'var(--color-secondary)',
@@ -45,8 +49,11 @@ export default {
         },
       },
       backgroundImage: {
-        'biege-gradient-horizontal': 'linear-gradient(0deg, var(--color-biege-neutral-1) 60%, var(--color-biege-neutral) 100%)',
-        'popup-gradient-background': 'linear-gradient(to top, rgba(30, 29, 26, 0.4), rgba(30, 29, 26, 0.3))'
+        'biege-gradient-horizontal':
+          'linear-gradient(0deg, var(--color-biege-neutral-1) 60%, var(--color-biege-neutral) 100%)',
+        'popup-gradient-background':
+          'linear-gradient(to top, rgba(30, 29, 26, 0.4), rgba(30, 29, 26, 0.3))',
+        'biege-gradient-horizontal-1': 'linear-gradient(to right, #BAB7AA 100%, #BAB7AA 24%)',
       },
       // boxShadow: {
       //   'light-two-sided': '',

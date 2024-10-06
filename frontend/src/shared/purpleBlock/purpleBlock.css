@@ -1,6 +1,9 @@
 .purple-block {
+  position: relative;
+
   background: var(--color-purple-light);
-  box-shadow: inset 0 -24px 0 var(--color-purple-semi-transparent);
+  box-shadow: inset 0 -24px 0 var(--color-purple-semi-transparent),
+    inset 0 4px 0 var(--color-purple-soft);
 
   &::before {
     content: '';
@@ -14,11 +17,11 @@
     transform: rotate(-20deg);
     position: absolute;
 
-    top: 13px;
+    top: 6px;
     left: 7px;
   }
 
-  &::after {
+  /* &::after {
     content: '';
 
     width: 100%;
@@ -31,5 +34,5 @@
     top: 0;
 
     z-index: 100;
-  }
+  } */
 }

@@ -26,7 +26,7 @@ const BottomNavigationButton = ({ text, section, Icon }: IBottomNavigationButton
       ref={linkRef}
       className={`bottom-link ${
         isActive ? 'active' : ''
-      } relative flex justify-center items-center flex-col gap-[2px] z-20 w-[60px] h-[60px] rounded-[8px] duration-300`}
+      } relative cursor-pointer flex justify-center items-center flex-col gap-[2px] z-20 w-[60px] h-[60px] rounded-[8px] duration-300`}
     >
       <div></div>
       <Icon className='w-[28px] h-[28px]' />

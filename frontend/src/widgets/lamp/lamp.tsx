@@ -1,14 +1,16 @@
 import lamp from '@assets/images/lamp.png'
+import lampBg from '@assets/images/lamp_bg.png'
 
 const Lamp = () => {
 
-  const clickHandler = (e) => {
+  const clickHandler = () => {
 
   }
 
   return (
-    <div onClick={clickHandler} className='open-scale mt-[246px] ml-auto origin-bottom cursor-pointer clickable'>
-        <img className='w-[60px] h-[78px]' src={lamp} alt="lamp" />
+    <div onClick={clickHandler} className='open-scale w-[60px] h-[60px] mt-[12px] rounded-[12px] relative ml-auto origin-bottom cursor-pointer clickable shadow-[0px_4px_24px_rgba(20,0,48,0.64)]'>
+        <img className='w-[60px] h-[60px] absolute -z-10' src={lampBg} alt="lamp bg" />
+        <img className='w-[40px] h-[68px] absolute left-1/2 -translate-x-1/2 -translate-y-[15px]' src={lamp} alt="lamp" />
     </div>
   )
 }

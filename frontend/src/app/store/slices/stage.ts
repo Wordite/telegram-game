@@ -13,7 +13,9 @@ export const stageSlice = createSlice({
   initialState,
   reducers: {
     upgradeStage: (state) => {
-      state.step += 0.1
+      const newStage = (Number(state.step) + 0.1).toFixed(1)
+      if (newStage >= 2.1) return
+      state.step = newStage
     },
   },
 })

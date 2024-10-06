@@ -4,7 +4,7 @@ import Menu from "@components/menu/menu"
 
 const TopMenu = () => {
   return (
-    <header className='left-0 top-0 w-full h-[96px] px-[20px] py-[14px] pb-[40px] flex justify-between '>
+    <header className='left-0 top-0 w-full h-[96px] px-[20px] py-[14px] pb-[40px] flex '>
         <Coins />
         <Boosts />
         <Menu />
