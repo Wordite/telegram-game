@@ -8,7 +8,7 @@ const init = () => {
     element.style.setProperty('--content-text', `'${el.textContent}'`)
 
     observeTextContent(el, () => {
-        element.style.setProperty('--content-text', `'${el.textContent}'`)
+      element.style.setProperty('--content-text', `'${el.textContent}'`)
     })
   })
 

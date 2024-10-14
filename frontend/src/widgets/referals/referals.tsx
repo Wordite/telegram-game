@@ -3,7 +3,7 @@ import ReferalFriend from '@components/referalFriend/referalFriend'
 
 const Referals = () => {
   return (
-    <section className='open-scale w-full mt-[16px] h-[calc(100%-140px)] bg-biege-gradient-horizontal rounded-[12px] shadow-[0_-2px_0_var(--color-biege-light-1)]'>
+    <section className='open-scale w-full mt-[16px] h-[calc(100%-140px)] bg-biege-gradient-horizontal rounded-[12px] overflow-hidden shadow-[0_-2px_0_var(--color-biege-light-1)]'>
       <div className='h-[57px] px-[20px] flex items-center relative gap-[12px]'>
         <img className='w-[26px] h-[26px]' src={friends} alt='people' />
         <p className='text text-[16px] relative z-10'>

@@ -10,13 +10,14 @@ import Earn from '@pages/earn'
 import Game from '@pages/game'
 import { useSelector } from 'react-redux'
 import { selectPage } from './store/slices/page'
+import PopupBackground from '@components/popupBackground/popupBackground'
 
 const pages = {
   home: <Home />,
   friends: <Friends />,
   airdrop: <Airdrop />,
   game: <Game />,
-  earn: <Earn />
+  earn: <Earn />,
 }
 
 const App = () => {
@@ -29,10 +30,9 @@ const App = () => {
   return (
     <main className='h-screen relative'>
       <Background />
+      <PopupBackground />
       <TopMenu />
-      <div className='h-[calc(100dvh-96px-86px)] px-[20px] pb-[22px] flex flex-col'>
-        {pages[page]}
-      </div>
+      {pages[page]}
       <BottomNavigation />
     </main>
   )

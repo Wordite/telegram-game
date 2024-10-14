@@ -2,7 +2,13 @@
   position: relative;
   background: var(--color-orange);
   box-shadow: inset 0 -6px 0 var(--color-orange-dark), inset 0 2px 0 var(--color-orange-light);
+}
 
+.orange-block-even {
+  box-shadow: inset 0 -2px 0 var(--color-orange-dark), inset 0 2px 0 var(--color-orange-light);
+}
+
+.orange-block-with-glitter {
   &::before {
     content: '';
 

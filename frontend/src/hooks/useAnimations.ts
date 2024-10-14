@@ -19,8 +19,27 @@ export const openScale = (el = null) => {
   )
 }
 
+export const rotateFortuneWheel = (rotationStart = 0, el = '.spin-wheel') => {
+  const tl = gsap.timeline()
+
+  tl.fromTo(
+    el,
+    {
+      rotation: rotationStart,
+    },
+    {
+      rotation: rotationStart + 1250,
+      duration: 5,
+      ease: ' power2. ease-in-out',
+    }
+  )
+
+  return () => tl.kill()
+}
+
 export const useAnimations = () => {
   return {
     openScale,
+    rotateFortuneWheel,
   }
 }

@@ -1,5 +1,6 @@
 .bottom-menu {
   box-shadow: 0 -2px 0 var(--color-biege-light-1);
+  z-index: 15000;
 
   &::after {
     position: absolute;

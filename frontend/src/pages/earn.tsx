@@ -1,8 +1,10 @@
+import Container from "@app/container"
+import Tasks from "@widgets/tasks/tasks"
 
 const Earn = () => (
-  <>
-    Earn
-  </>
+  <Container>
+    <Tasks />
+  </Container>
 )
 
 export default Earn

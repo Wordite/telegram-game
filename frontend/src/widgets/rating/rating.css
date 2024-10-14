@@ -1,0 +1,23 @@
+
+.rating-yourself {
+    transition: .3s;
+    bottom: -100px;
+
+    &::after {
+        content: '';
+        position: absolute;
+
+        width: calc(100% + 40px);
+        height: 130px;
+
+        bottom: -20px;
+        left: -20px;
+
+        background: linear-gradient(to top, #ECE9E0 40%, rgba(236, 233, 224, 0) 100%);
+        z-index: -1;
+    }
+}
+
+.rating-yourself.active {
+    bottom: 92px;
+}

@@ -1,10 +1,13 @@
 import lamp from '@assets/images/lamp.png'
 import lampBg from '@assets/images/lamp_bg.png'
+import { usePopup } from '@hooks/usePopup'
+import { Popups } from '@app/types/popups'
 
 const Lamp = () => {
+  const { openPopup } = usePopup(Popups.BoostGoldMining)
 
   const clickHandler = () => {
-
+    openPopup()
   }
 
   return (

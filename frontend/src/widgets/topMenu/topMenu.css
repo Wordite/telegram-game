@@ -1,0 +1,43 @@
+
+.top-menu {
+    transition: .3s;
+}
+
+.top-menu.section-opened {
+    padding-left: 80px;
+}
+
+.top-menu.section-opened .top-menu-boosts  {
+    margin-left: 14px;
+}
+
+
+.top-menu.section-opened .top-menu-boosts, .top-menu.section-opened .top-menu-coins {
+    width: 104px;
+}
+
+.top-menu.spin-opened .top-menu-boosts, .top-menu.spin-opened .top-menu-coins {
+    opacity: 0;
+}
+
+
+.section-close-button {
+    transition: .3s;
+    position: absolute !important;
+    left: -60px;
+}
+
+
+.section-close-button.active {
+    left: 20px;
+}
+
+
+.top-menu-boosts {
+    transition: .3s;
+}
+
+.top-menu-coins {
+    transition: .3s;
+}
+

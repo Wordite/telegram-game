@@ -5,8 +5,8 @@ import BiegeBlock from '@shared/biegeBlock/biegeBlock'
 
 const InviteFriends = () => {
   return (
-    <div className='h-[52px] mt-[24px] flex gap-[8%]'>
-      <OrangeBlock className='w-[calc(100%-68px)] h-full rounded-[12px] border-black border-[1.6px] cursor-pointer clickable'>
+    <div className='open-scale h-[52px] mt-[24px] flex gap-[8%]'>
+      <OrangeBlock isHaveGlitter={true} className='w-[calc(100%-68px)] h-full rounded-[12px] border-black border-[1.6px] cursor-pointer clickable'>
         <div className='relative mb-[13px]'>
             <img className='w-[34px] h-[34px]' src={btl} alt="btl" />
             <div className='flex items-center absolute right-[-11px] bottom-[-11px]'>

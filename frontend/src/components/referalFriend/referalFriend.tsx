@@ -23,7 +23,7 @@ const ReferalFriend = ({ isCompleted, progress, earned }: IReferalFriendProps) =
           </p>
         </div>
 
-        <PurpleBlock className='clickable cursor-pointer w-[96px] h-[48px] rounded-[8px] border-black border-[1.6px] ml-auto'>
+        <PurpleBlock isHaveGlitter={true} className='clickable cursor-pointer w-[96px] h-[48px] rounded-[8px] border-black border-[1.6px] ml-auto'>
           <img className='w-[22px] h-[22px]' src={btl} alt='btl' />
           <div className='relative z-10 flex items-center ml-[5px]'>
             <p className='text-[16px] text'>+</p>

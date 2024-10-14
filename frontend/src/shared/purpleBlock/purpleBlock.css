@@ -1,10 +1,16 @@
 .purple-block {
   position: relative;
-
   background: var(--color-purple-light);
   box-shadow: inset 0 -24px 0 var(--color-purple-semi-transparent),
     inset 0 4px 0 var(--color-purple-soft);
+}
 
+.purple-block-even {
+  box-shadow: inset 0 -2px 0 var(--color-purple-semi-transparent),
+    inset 0 2px 0 var(--color-purple-soft);
+}
+
+.purple-block-with-glitter {
   &::before {
     content: '';
 
@@ -20,19 +26,4 @@
     top: 6px;
     left: 7px;
   }
-
-  /* &::after {
-    content: '';
-
-    width: 100%;
-    height: 9px;
-
-    background: var(--color-purple-dark);
-
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    z-index: 100;
-  } */
 }

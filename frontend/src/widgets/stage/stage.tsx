@@ -40,6 +40,7 @@ const Stage = () => {
 
       <PurpleBlock
         onClick={clickHandler}
+        isHaveGlitter={true}
         className='h-[52px] mt-[16px] cursor-pointer clickable rounded-[12px] border-black border-[1.6px]'
       >
         <div className='flex items-center gap-[6px] pb-[4px]'>

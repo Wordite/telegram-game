@@ -16,7 +16,7 @@ const Menu = () => {
   return (
     <BiegeBlock
       onClick={clickHandler}
-      className='clickable w-[44px] h-[42px] ml-auto rounded-[6px] border-[1.6px] border-black menu flex-col cursor-pointer'
+      className='clickable ml-auto w-[44px] h-[42px] rounded-[6px] border-[1.6px] border-black menu flex-col cursor-pointer'
     >
       <span className='block w-[21px] h-[5px] bg-blue-light rounded-[2px] border-[1px] border-black burger' />
       <span className='block w-[21px] h-[5px] bg-blue-light rounded-[2px] border-[1px] border-black burger' />

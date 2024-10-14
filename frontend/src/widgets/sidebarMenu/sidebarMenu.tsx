@@ -1,11 +1,13 @@
 import Background from '@assets/images/sidebar_menu_bg.svg'
 import arrowRight from '@assets/icons/arrow_right.png'
-import ShopIcon from '@assets/icons/shop.svg'
-import SpinIcon from '@assets/icons/spin.svg'
-import StarsIcon from '@assets/icons/stars.svg'
+import shop from '@assets/icons/shop.png'
+import spin from '@assets/icons/spin.png'
+import stars from '@assets/icons/stars.png'
+
 import { useState } from 'react'
 import BiegeBlock from '@shared/biegeBlock/biegeBlock'
 import SidebarButton from '@components/sidebarButton/sidebarButton'
+import { SidebarSections } from '@app/types/sidebarSections'
 import './sidebarMenu.css'
 
 const SidebarMenu = () => {
@@ -34,9 +36,9 @@ const SidebarMenu = () => {
       >
         <Background className='absolute left-[-32px] top-0 -z-10' />
         <div className='mt-[76px] gap-[12px] flex flex-col relative z-30'>
-          <SidebarButton Icon={ShopIcon} name='Shop' />
-          <SidebarButton Icon={SpinIcon} name='Daily Spin' />
-          <SidebarButton Icon={StarsIcon} name='Rating' />
+          <SidebarButton iconWidth={28} iconHeight={29} icon={shop} name='Shop' section={SidebarSections.Shop} />
+          <SidebarButton iconWidth={28} iconHeight={29} icon={spin} name='Daily Spin' section={SidebarSections.DailySpin} />
+          <SidebarButton iconWidth={36} iconHeight={29} icon={stars} name='Rating' section={SidebarSections.Rating} />
         </div>
 
         <div className='mt-[8px] relative'>

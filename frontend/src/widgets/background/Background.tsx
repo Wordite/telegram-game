@@ -10,7 +10,7 @@ const Background = () => {
   return (
     <div className={`background  ${isHome ? '' : 'dark'}`}>
       <img
-        className='w-full h-[calc(100dvh-70px)] absolute -z-50 object-cover'
+        className='w-full h-[calc(100vh-70px)] absolute -z-50 object-cover'
         src={background}
         alt='bg'
       />
