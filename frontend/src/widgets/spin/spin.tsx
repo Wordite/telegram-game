@@ -1,5 +1,4 @@
 import { selectSection } from '@app/store/slices/sidebar'
-import { ShopItems } from '@app/types/shopItems'
 import { SidebarSections } from '@app/types/sidebarSections'
 import { useAnimations } from '@hooks/useAnimations'
 import { useEffect, useState } from 'react'

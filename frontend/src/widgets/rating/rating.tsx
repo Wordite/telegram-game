@@ -1,5 +1,4 @@
 import { selectSection } from '@app/store/slices/sidebar'
-import { ShopItems } from '@app/types/shopItems'
 import { SidebarSections } from '@app/types/sidebarSections'
 import { useAnimations } from '@hooks/useAnimations'
 import { useEffect } from 'react'
@@ -8,11 +7,13 @@ import StopWatch from '@assets/icons/stopwatch.svg'
 import BiegeBlockNeutral from '@shared/biegeBlockNeutral/biegeBlockNeutral'
 import RatingPlayer from '@components/ratingPlayer/ratingPlayer'
 import './rating.css'
+import useTimer from '@hooks/useTimer'
 
 const Rating = () => {
   const section = useSelector(selectSection)
   const isActive = section === SidebarSections.Rating
   const { openScale } = useAnimations()
+  const time = useTimer(23063)
 
   useEffect(() => {
     if (isActive) openScale('.rating-item')
@@ -34,7 +35,7 @@ const Rating = () => {
                 <p className='text-[24px] text relative z-10'>Season 1</p>
                 <div className='text-[12px] flex gap-[3px]'>
                   <p className='text-secondary text relative z-10'>Season ends:</p>
-                  <p className='relative z-10 text'>06:24:23</p>
+                  <p className='relative z-10 text'>{time}</p>
                 </div>
               </div>
 
