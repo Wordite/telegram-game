@@ -1,0 +1,22 @@
+
+.bath-back {
+    transform: scale(0);
+}
+
+.bath-crack {
+    transition: .1s;
+}
+.bath-crack.small {
+    width: 2.5rem;
+}
+.bath-crack.medium {
+    width: 8.125rem;
+}
+.bath-crack.big {
+    width: 13.75rem;
+}
+
+
+.bath, .bath-coin-1, .bath-coin-2, .bath-coin-3, .diamond {
+    will-change: transform, opacity;
+}

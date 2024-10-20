@@ -16,9 +16,9 @@ const Triangle = (props: ITriangleProps) => {
       {...htmlProps}
       className={`w-0 h-0 ${className}`}
       style={{
-        borderLeft: `${props.isBig ? '1.7px' : '1px'} solid transparent`,
-        borderRight: `${props.isBig ? '1.7px' : '1px'} solid transparent`,
-        borderBottom: `${props.isBig ? '6.5px' : '3px'} solid black`,
+        borderLeft: `${props.isBig ? '.1062rem' : '.0625rem'} solid transparent`,
+        borderRight: `${props.isBig ? '.1062rem' : '.0625rem'} solid transparent`,
+        borderBottom: `${props.isBig ? '.4063rem' : '.1875rem'} solid black`,
         ...props.style
       }}
     />

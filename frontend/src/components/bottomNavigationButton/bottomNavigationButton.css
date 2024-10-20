@@ -23,13 +23,13 @@
   width: 100%;
   height: 100%;
 
-  border: 1.6px solid var(--color-black);
+  border: .1rem solid var(--color-black);
   background: var(--color-orange);
 
-  box-shadow: inset 0 -8px 0 var(--color-orange-dark), inset 0 4px 0 var(--color-orange-light);
+  box-shadow: inset 0 -0.5rem 0 var(--color-orange-dark), inset 0 .25rem 0 var(--color-orange-light);
 
   z-index: -1;
-  border-radius: 8px;
+  border-radius: .5rem;
 
   transform: scale3d(0.1, 0.1, 1);
   opacity: 0;

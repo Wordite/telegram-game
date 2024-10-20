@@ -1,17 +1,17 @@
 
 .rating-yourself {
     transition: .3s;
-    bottom: -100px;
+    bottom: -6.25rem;
 
     &::after {
         content: '';
         position: absolute;
 
-        width: calc(100% + 40px);
-        height: 130px;
+        width: calc(100% + 2.5rem);
+        height: 8.125rem;
 
-        bottom: -20px;
-        left: -20px;
+        bottom: -1.25rem;
+        left: -1.25rem;
 
         background: linear-gradient(to top, #ECE9E0 40%, rgba(236, 233, 224, 0) 100%);
         z-index: -1;
@@ -19,5 +19,5 @@
 }
 
 .rating-yourself.active {
-    bottom: 92px;
+    bottom: 5.75rem;
 }

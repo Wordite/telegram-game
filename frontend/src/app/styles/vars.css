@@ -1,7 +1,7 @@
 html {
   --color-purple: #bd72f6;
   --color-purple-light: #c984f7;
-  --color-purple-semi-transparent: rgba(176, 94, 244, .48);
+  --color-purple-semi-transparent: rgba(176, 94, 244, .68);
   --color-purple-dark: #AC5CE9;
   --color-purple-soft: #E1A3FD;
   --color-purple-icon: #C360FF;
@@ -10,6 +10,8 @@ html {
 
   --color-white: white;
   --color-black: black;
+
+  --color-red: #EF1633;
 
   --color-biege-dark: #a59b73;
   --color-biege: #d7d1b6;

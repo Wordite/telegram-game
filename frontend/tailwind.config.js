@@ -50,6 +50,9 @@ export default {
           DEFAULT: 'var(--color-brown)',
           light: 'var(--color-brown-light)',
         },
+        red: {
+          DEFAULT: 'var(--color-red)',
+        }
       },
       backgroundImage: {
         'biege-gradient-horizontal':

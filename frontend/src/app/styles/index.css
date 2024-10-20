@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+:root,
+body,
+html {
+  font-size: 16px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 390px) {
+  :root,
+  body,
+  html {
+    font-size: calc(11px + (16 - 11) * ((100vw - 270px) / (390 - 270)));
+  }
+}
+
+
+@media only screen and (min-width: 390px) {
+  font-size: 16px;
+}
+
+
 body {
   font-family: 'Catamaran';
   color: white;
@@ -39,24 +60,13 @@ body {
     color: black;
 
     position: absolute;
-    top: 1.5px;
+    top: .0938rem;
     left: 0;
 
     z-index: -1;
   }
 }
 
-html,
-:root,
-body {
-  height: 100dvh !important;
-  overflow: hidden;
-  font-size: calc(1.6vw + 1.6vh);
-
-  @media (min-width: 600px) {
-    font-size: 22px;
-  }
-}
 
 main {
   max-width: 600px;
@@ -86,7 +96,7 @@ main {
   transition: 0.4s;
   transform: translate3d(-100%, 0, 0);
 
-  z-index: 10000;
+  z-index: 23000;
 }
 
 .sidebar-section.active {
@@ -94,18 +104,15 @@ main {
 }
 
 .gold-text {
-  background: linear-gradient(90deg, #fff240 0%, #ffc413 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent !important;
+  /* background: linear-gradient(90deg, #fff240 0%, #ffc413 100%);
+  background-clip: text; */
+  /* -webkit-background-clip: text; */
+  
+  /* text-shadow: none; */
 
-  text-shadow: none;
-}
+  color: #fff240;
 
-.gold-text-shadow {
-  position: absolute !important;
-
-  --stroke-width: 0.6px;
+  --stroke-width: .0375rem;
   --stroke-color: #d65f00;
 
   text-shadow: calc(var(--stroke-width) * 1) calc(var(--stroke-width) * 0) 0 var(--stroke-color),
@@ -124,4 +131,34 @@ main {
     calc(var(--stroke-width) * 0.3827) calc(var(--stroke-width) * -0.9239) 0 var(--stroke-color),
     calc(var(--stroke-width) * 0.7071) calc(var(--stroke-width) * -0.7071) 0 var(--stroke-color),
     calc(var(--stroke-width) * 0.9239) calc(var(--stroke-width) * -0.3827) 0 var(--stroke-color);
+}
+
+.popup {
+  transition: 0.12s;
+  z-index: 30000 !important;
+
+  transform: scale3d(0, 0, 1) translate(-50%, -55%) !important;
+  transform-origin: left top;
+}
+
+.popup.no-translate {
+  transition: 0.12s;
+  z-index: 30000 !important;
+
+  transform: scale3d(0, 0, 1) !important;
+  transform-origin: center;
+}
+
+.popup.active {
+  transform: scale3d(1, 1, 1) translate(-50%, -55%) !important;
+  transition: 0.25s;
+
+  z-index: 1000;
+}
+
+.popup.active.no-translate {
+  transform: scale3d(1, 1, 1) !important;
+  transition: 0.25s;
+
+  z-index: 1000;
 }

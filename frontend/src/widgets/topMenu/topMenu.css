@@ -1,43 +1,45 @@
-
 .top-menu {
-    transition: .3s;
+  transition: 0.3s;
 }
 
 .top-menu.section-opened {
-    padding-left: 80px;
+  padding-left: 5.625rem !important;
 }
 
-.top-menu.section-opened .top-menu-boosts  {
-    margin-left: 14px;
+.top-menu.section-opened .top-menu-boosts {
+  margin-left: 1.25rem;
 }
 
-
-.top-menu.section-opened .top-menu-boosts, .top-menu.section-opened .top-menu-coins {
-    width: 104px;
+.top-menu.section-opened .top-menu-boosts,
+.top-menu.section-opened .top-menu-coins {
+  width: 6.5rem;
 }
 
-.top-menu.spin-opened .top-menu-boosts, .top-menu.spin-opened .top-menu-coins {
-    opacity: 0;
+.top-menu.spin-opened .top-menu-boosts,
+.top-menu.spin-opened .top-menu-coins {
+  opacity: 0;
 }
-
 
 .section-close-button {
-    transition: .3s;
-    position: absolute !important;
-    left: -60px;
+  transition: 0.3s;
+  position: absolute !important;
+  left: -3.75rem;
 }
-
 
 .section-close-button.active {
-    left: 20px;
+  left: 1.25rem;
 }
 
-
 .top-menu-boosts {
-    transition: .3s;
+  transition: 0.3s;
 }
 
 .top-menu-coins {
-    transition: .3s;
+  transition: 0.3s;
 }
 
+/* @media only screen and (max-width: 310px) {
+  .top-menu {
+    padding-left: 0.5rem !important;
+  }
+} */

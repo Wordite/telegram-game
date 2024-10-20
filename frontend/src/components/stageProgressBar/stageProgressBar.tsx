@@ -6,10 +6,10 @@ interface IStageProgressBarProps {
 
 const StageProgressBar = ({ progress }: IStageProgressBarProps) => {
   return (
-    <div className='h-[12px] border-[1.6px] border-black relative z-50 bg-brown shadow-[inset_0_8px_var(--color-brown-light)] rounded-[12px] rounded-t-[4px] overflow-hidden'>
+    <div className='h-[.75rem] border-[.1rem] border-black relative z-50 bg-brown shadow-[inset_0_.5rem_var(--color-brown-light)] rounded-[.75rem] rounded-t-[.25rem] overflow-hidden'>
       <div
         style={{ width: progress + '%' }}
-        className='relative z-30 h-full rounded-[12px] duration-300 rounded-tl-[4px] bg-orange shadow-[inset_0_-1px_0_var(--color-orange-dark),inset_0_1px_0_var(--color-orange-light),1.2px_0_0_var(--color-black),1.2px_-0.4px_0_var(--color-black),1.2px_0.4px_0_var(--color-black)]'
+        className='relative z-30 h-full rounded-[.75rem] duration-300 rounded-tl-[.25rem] bg-orange shadow-[inset_0_-0.0625rem_0_var(--color-orange-dark),inset_0_.0625rem_0_var(--color-orange-light),.075rem_0_0_var(--color-black),.075rem_-0.025rem_0_var(--color-black),.075rem_.025rem_0_var(--color-black)]'
       />
       <Triangle style={{ left: '10%', bottom: '0' }} className='absolute' />
       <Triangle style={{ left: '20%', bottom: '0' }} className='absolute' />

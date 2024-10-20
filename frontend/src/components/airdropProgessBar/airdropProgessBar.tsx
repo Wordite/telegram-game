@@ -6,10 +6,10 @@ interface IAirDropProgressBarProps {
 
 const AirDropProgressBar = ({ progress }: IAirDropProgressBarProps) => {
   return (
-    <div className='h-[24px] border-[1.6px] border-black relative z-50 bg-brown shadow-[inset_0_8px_var(--color-brown-light)] rounded-[12px] rounded-b-[4px] overflow-hidden'>
+    <div className='h-[1.5rem] border-[.1rem] border-black relative z-50 bg-brown shadow-[inset_0_.5rem_var(--color-brown-light)] rounded-[.75rem] rounded-b-[.25rem] overflow-hidden'>
       <div
         style={{ width: progress + '%' }}
-        className='relative z-30 h-full rounded-[12px] duration-300 rounded-bl-[2px] rounded-r-none bg-orange shadow-[inset_0_-7px_0_var(--color-orange-dark),inset_0_3px_0_var(--color-orange-light),1.2px_0_0_var(--color-black),1.2px_-0.4px_0_var(--color-black),1.2px_0.4px_0_var(--color-black)]'
+        className='relative z-30 h-full rounded-[.75rem] duration-300 rounded-bl-[.125rem] rounded-r-none bg-orange shadow-[inset_0_-0.4375rem_0_var(--color-orange-dark),inset_0_.1875rem_0_var(--color-orange-light),.075rem_0_0_var(--color-black),.075rem_-0.025rem_0_var(--color-black),.075rem_.025rem_0_var(--color-black)]'
       />
       <Triangle isBig={true} style={{ left: '10%', bottom: '0' }} className='absolute' />
       <Triangle isBig={true} style={{ left: '20%', bottom: '0' }} className='absolute' />

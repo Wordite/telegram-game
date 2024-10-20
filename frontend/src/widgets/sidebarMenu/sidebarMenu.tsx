@@ -18,32 +18,50 @@ const SidebarMenu = () => {
   }
 
   return (
-    <aside className='sidebar-menu w-[92px] h-[324px] absolute'>
+    <aside className='sidebar-menu w-[5.75rem] h-[20.25rem] absolute'>
       <BiegeBlock
         onClick={sidebarButtonClickHandler}
-        className='sidebar-menu-button open-scale border-[1.6px] border-black clickable clickable w-[44px] h-[42px] bg-biege rounded-[6px] flex items-center justify-center cursor-pointer mt-[12px] relative z-50'
+        className='sidebar-menu-button open-scale border-[.1rem] border-black clickable clickable w-[2.75rem] h-[2.625rem] bg-biege rounded-[.375rem] flex items-center justify-center cursor-pointer mt-[.75rem] relative z-50'
       >
         <img
           src={arrowRight}
-          className={`block w-[12px] h-[24px] ${isActive ? '-rotate-180' : ''} duration-300`}
+          className={`block w-[.75rem] h-[1.5rem] ${isActive ? '-rotate-180' : ''} duration-300`}
         />
       </BiegeBlock>
 
       <div
         className={`absolute duration-300 top-0 ${
-          isActive ? 'left-[0]' : 'left-[calc(-105%-32px)]'
+          isActive ? 'left-[0]' : 'left-[calc(-105%-2rem)]'
         }`}
       >
-        <Background className='absolute left-[-32px] top-0 -z-10' />
-        <div className='mt-[76px] gap-[12px] flex flex-col relative z-30'>
-          <SidebarButton iconWidth={28} iconHeight={29} icon={shop} name='Shop' section={SidebarSections.Shop} />
-          <SidebarButton iconWidth={28} iconHeight={29} icon={spin} name='Daily Spin' section={SidebarSections.DailySpin} />
-          <SidebarButton iconWidth={36} iconHeight={29} icon={stars} name='Rating' section={SidebarSections.Rating} />
+        <Background className='w-[6.5rem] h-[20.5rem] absolute left-[-2rem] top-0 -z-10' />
+        <div className='mt-[4.75rem] gap-[.75rem] flex flex-col relative z-30'>
+          <SidebarButton
+            iconWidth='1.75rem'
+            iconHeight='1.8125rem'
+            icon={shop}
+            name='Shop'
+            section={SidebarSections.Shop}
+          />
+          <SidebarButton
+            iconWidth='1.75rem'
+            iconHeight='1.8125rem'
+            icon={spin}
+            name='Daily Spin'
+            section={SidebarSections.DailySpin}
+          />
+          <SidebarButton
+            iconWidth='2.25rem'
+            iconHeight='1.8125rem'
+            icon={stars}
+            name='Rating'
+            section={SidebarSections.Rating}
+          />
         </div>
 
-        <div className='mt-[8px] relative'>
-          <div className='ton-prize-pool bg-biege-neutral w-[56.8px] h-[56.8px] shadow-[inset_0px_-4px_0px_rgba(165,155,115,0.64)] rounded-[8px] absolute left-[1.6px] top-[-33px] border-transparent border-[1.6px]'></div>
-          <p className='text-[10px] text-secondary text-center w-[55px] text leading-[12px] ml-[2px] -translate-y-[4px]'>
+        <div className='mt-[.5rem] relative'>
+          <div className='ton-prize-pool bg-biege-neutral w-[3.55rem] h-[3.55rem] shadow-[inset_0rem_-0.25rem_0rem_rgba(165,155,115,0.64)] rounded-[.5rem] absolute left-[.1rem] top-[-2.0625rem] border-transparent border-[.1rem]'></div>
+          <p className='text-[.625rem] text-secondary text-center w-[3.4375rem] text leading-[.75rem] ml-[.125rem] -translate-y-[.25rem]'>
             100 TON prize pool
           </p>
         </div>

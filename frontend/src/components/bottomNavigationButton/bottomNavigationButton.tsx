@@ -8,8 +8,8 @@ interface IBottomNavigationButton {
   section: string
   iconWhite: any
   iconSecondary: any
-  iconWidth: number
-  iconHeight: number
+  iconWidth: string
+  iconHeight: string
   text: string
 }
 
@@ -32,11 +32,11 @@ const BottomNavigationButton = ({ text, section, iconWhite, iconSecondary, iconH
       ref={linkRef}
       className={`bottom-link ${
         isActive ? 'active' : ''
-      } relative cursor-pointer flex justify-center items-center flex-col gap-[2px] z-20 w-[60px] h-[60px] rounded-[8px] duration-300`}
+      } relative cursor-pointer flex justify-center items-center flex-col gap-[.125rem] z-20 w-[3.75rem] h-[3.75rem] rounded-[.5rem] duration-300`}
     >
       <div></div>
-      <img style={{ width: iconWidth + 'px', height: iconHeight + 'px' }} src={isActive ? iconWhite : iconSecondary} alt='icon' />
-      <p className='text-[10px] text'>{text}</p>
+      <img style={{ width: iconWidth, height: iconHeight }} src={isActive ? iconWhite : iconSecondary} alt='icon' />
+      <p className='text-[.625rem] text'>{text}</p>
     </div>
   )
 }

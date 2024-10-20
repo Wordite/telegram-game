@@ -7,8 +7,8 @@ interface ISidebarButtonProps extends PropsWithChildren {
   icon: any
   name: string
   section: SidebarSections
-  iconWidth: number
-  iconHeight: number
+  iconWidth: string
+  iconHeight: string
 }
 
 const SidebarButton = ({ icon, name, children, section, iconWidth, iconHeight }: ISidebarButtonProps) => {
@@ -19,9 +19,9 @@ const SidebarButton = ({ icon, name, children, section, iconWidth, iconHeight }:
   }
 
   return (
-    <BiegeBlock onClick={handleClick} className='sidebar-menu-button clickable w-[60px] h-[60px] bg-biege rounded-[6px] gap-[3px] flex items-center justify-center flex-col cursor-pointer border-[1.6px] border-black'>
-      <img style={{ width: iconWidth + 'px', height: iconHeight + 'px' }} src={icon} alt='icon' />
-      <span className='text text-[10px] z-10'>{name}</span>
+    <BiegeBlock onClick={handleClick} className='sidebar-menu-button clickable w-[3.75rem] h-[3.75rem] bg-biege rounded-[.375rem] gap-[.1875rem] flex items-center justify-center flex-col cursor-pointer border-[.1rem] border-black'>
+      <img style={{ width: iconWidth, height: iconHeight }} src={icon} alt='icon' />
+      <span className='text text-[.625rem] z-10'>{name}</span>
       {children}
     </BiegeBlock>
   )

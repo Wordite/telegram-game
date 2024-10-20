@@ -1,21 +1,21 @@
 .purple-block {
   position: relative;
   background: var(--color-purple-light);
-  box-shadow: inset 0 -24px 0 var(--color-purple-semi-transparent),
-    inset 0 4px 0 var(--color-purple-soft);
+  box-shadow: inset 0 -1.5rem 0 var(--color-purple-semi-transparent),
+    inset 0 .25rem 0 var(--color-purple-soft);
 }
 
 .purple-block-even {
-  box-shadow: inset 0 -2px 0 var(--color-purple-semi-transparent),
-    inset 0 2px 0 var(--color-purple-soft);
+  box-shadow: inset 0 -0.125rem 0 var(--color-purple-semi-transparent),
+    inset 0 .125rem 0 var(--color-purple-soft);
 }
 
 .purple-block-with-glitter {
   &::before {
     content: '';
 
-    width: 10px;
-    height: 8px;
+    width: .625rem;
+    height: .5rem;
 
     background-color: var(--color-glitter);
     border-radius: 50%;
@@ -23,7 +23,7 @@
     transform: rotate(-20deg);
     position: absolute;
 
-    top: 6px;
-    left: 7px;
+    top: .375rem;
+    left: .4375rem;
   }
 }

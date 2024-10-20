@@ -1,7 +1,7 @@
 import airdrop from '@assets/icons/airdrop.png'
 import AirDropProgressBar from '@components/airdropProgessBar/airdropProgessBar'
 import BiegeBlockNeutral from '@shared/biegeBlockNeutral/biegeBlockNeutral'
-import flask from '@assets/icons/flask.png'
+import flask from '@assets/images/flask.png'
 import friends from '@assets/icons/friends.png'
 
 const airdropStage = () => {

@@ -18,46 +18,46 @@ import friendsSecondary from '@assets/icons/friends_secondary.png'
 
 const BottomNavigation = () => {
   return (
-    <footer className='bottom-menu w-full relative h-[86px] bg-gradient-to-t from-[#C6C4BA] to-[#D7D5CC] px-[20px] py-[12px] rounded-t-[12px] flex justify-between'>
+    <footer className='bottom-menu w-full relative h-[5.375rem] bg-gradient-to-t from-[#C6C4BA] to-[#D7D5CC] px-[1.25rem] py-[.75rem] rounded-t-[.75rem] flex justify-between'>
       <BottomNavigationButton
         section='home'
         text='Home'
         iconWhite={homeWhite}
         iconSecondary={homeSecondary}
-        iconWidth={28}
-        iconHeight={29}
+        iconWidth='1.75rem'
+        iconHeight='1.8125rem'
       />
       <BottomNavigationButton
         section='airdrop'
         text='Airdrop'
         iconWhite={airdropWhite}
         iconSecondary={airdropSecondary}
-        iconWidth={24}
-        iconHeight={29}
+        iconWidth='1.5rem'
+        iconHeight='1.8125rem'
       />
       <BottomNavigationButton
         section='game'
         text='Game'
         iconWhite={gameWhite}
         iconSecondary={gameSecondary}
-        iconWidth={32}
-        iconHeight={25}
+        iconWidth='2rem'
+        iconHeight='1.5625rem'
       />
       <BottomNavigationButton
         section='friends'
         text='Friends'
         iconWhite={friendsWhite}
         iconSecondary={friendsSecondary}
-        iconWidth={26}
-        iconHeight={27}
+        iconWidth='1.625rem'
+        iconHeight='1.6875rem'
       />
       <BottomNavigationButton
         section='earn'
         text='Earn'
         iconWhite={earnWhite}
         iconSecondary={earnSecondary}
-        iconWidth={28}
-        iconHeight={29}
+        iconWidth='1.75rem'
+        iconHeight='1.8125rem'
       />
     </footer>
   )

@@ -1,0 +1,20 @@
+
+.game-play-button {
+    position: relative;
+
+    display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      background: linear-gradient(145deg, #d1aaff, #b96cfb);
+      border-radius: 20px;
+      box-shadow: 3px 3px 5px #9b50e3, -3px -3px 5px #e8bbff;
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 2px 2px 0px #000;
+      border: none;
+      cursor: pointer;
+}
+
+
