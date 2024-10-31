@@ -33,6 +33,10 @@
   margin-left: 2.2rem;
 }
 
+.top-menu.section-opened .top-menu-btl {
+  opacity: 0;
+}
+
 
 .top-menu.game-page .top-menu-btl {
   transform: none;
