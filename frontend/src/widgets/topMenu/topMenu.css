@@ -10,15 +10,34 @@
   margin-left: 1.25rem;
 }
 
+.top-menu.spin-opened .top-menu-boosts,
+.top-menu.spin-opened .top-menu-coins {
+  opacity: 0;
+}
+
 .top-menu.section-opened .top-menu-boosts,
 .top-menu.section-opened .top-menu-coins {
   width: 6.5rem;
 }
 
-.top-menu.spin-opened .top-menu-boosts,
-.top-menu.spin-opened .top-menu-coins {
-  opacity: 0;
+.top-menu.game-page .top-menu-boosts,
+.top-menu.game-page .top-menu-coins {
+  width: 5.875rem;
 }
+
+.top-menu.game-page .top-menu-boosts {
+  margin-left: 2rem;
+}
+
+.top-menu.game-page .top-menu-btl {
+  margin-left: 2.2rem;
+}
+
+
+.top-menu.game-page .top-menu-btl {
+  transform: none;
+}
+
 
 .section-close-button {
   transition: 0.3s;

@@ -8,18 +8,21 @@ import { useSelector } from 'react-redux'
 import { selectSection } from '@app/store/slices/sidebar'
 import { SidebarSections } from '@app/types/sidebarSections'
 import './topMenu.css'
+import Btl from '@components/btl/btl'
+import { selectPage } from '@app/store/slices/page'
 
 const TopMenu = () => {
   const { closeSection } = useSidebarSection()
   const sidebarSection = useSelector(selectSection)
   const isSpin = sidebarSection === SidebarSections.DailySpin
+  const page = useSelector(selectPage)
 
   const clickHandler = () => {
     closeSection()
   }
 
   return (
-    <header className={`${sidebarSection ? 'section-opened' : ''} ${isSpin ? 'spin-opened' : ''} top-menu left-0 top-0 w-full h-[4.375rem] px-[1.25rem] py-[.875rem] mb-[2.5rem] flex relative z-[25000]`}>
+    <header className={`${sidebarSection ? 'section-opened' : ''} ${page === 'game' ? 'game-page' : ''} ${isSpin ? 'spin-opened' : ''} top-menu left-0 top-0 w-full h-[4.375rem] px-[1.9375rem] py-[.875rem] mb-[2.5rem] flex relative z-[25000]`}>
       <BiegeBlock
         onClick={clickHandler}
         className={`section-close-button border-[.1rem] flex ${sidebarSection ? 'active' : ''} border-black clickable w-[2.75rem] h-[2.625rem] bg-biege rounded-[.375rem] items-center justify-center cursor-pointer relative z-50`}
@@ -32,6 +35,7 @@ const TopMenu = () => {
 
       <Coins />
       <Boosts />
+      <Btl />
       {/* <Menu /> */}
     </header>
   )

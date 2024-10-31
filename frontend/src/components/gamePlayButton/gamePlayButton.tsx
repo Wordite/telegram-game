@@ -1,17 +1,23 @@
+import { decreaseBtl, selectBtl } from '@app/store/slices/btl'
 import { selectGameType } from '@app/store/slices/game'
 import { GameTypes } from '@app/types/gameTypes'
 import { Popups } from '@app/types/popups'
-import btl from '@assets/icons/btl.png'
 import { usePopup } from '@hooks/usePopup'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import btl from '@assets/icons/btl.png'
 
 const GamePlayButton = () => {
   const { openPopup } = usePopup(Popups.GamePlayStart)
   const gameType = useSelector(selectGameType)
   const cost = gameType === GameTypes.Silver ? 10 : gameType === GameTypes.Gold ? 100 : 300
+  const dispatch = useDispatch()
+  const btlBalance = useSelector(selectBtl)
 
   const handleClick = () => {
+    if (btlBalance < cost) return
+
     openPopup()
+    dispatch(decreaseBtl(cost))
   }
 
   return (
